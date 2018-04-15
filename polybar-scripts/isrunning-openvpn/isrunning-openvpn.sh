@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ "$(pgrep openvpn)" ]; then
-    echo "#1"
+if ps aux | grep "[u]sr/bin/openvpn" > /dev/null; then
+    echo ""
 else
-    echo "#2"
+    echo ""
 fi
